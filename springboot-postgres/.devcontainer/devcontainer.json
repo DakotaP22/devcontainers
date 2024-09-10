@@ -4,7 +4,16 @@
 	"name": "Java & PostgreSQL",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vmware.vscode-boot-dev-pack",
+				"rangav.vscode-thunder-client",
+				"GitHub.copilot"
+			]
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {}
