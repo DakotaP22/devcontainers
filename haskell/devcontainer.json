@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java-postgres
+{
+	"name": "Haskell",
+	"dockerFile": "Dockerfile",
+	"context": ".",
+	"workspaceFolder": "/haskell",
+	"mounts": [
+		// "source=angular_node_modules,target=/angular-18/node_modules,type=volume",
+		"source=${localWorkspaceFolder},target=/haskell,type=bind"
+	],
+	// "postCreateCommand": "npm install",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				
+			]
+		}
+	}
+}
