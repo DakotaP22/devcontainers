@@ -1,0 +1,18 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java-postgres
+{
+	"name": "nodejs-24",
+	"dockerFile": "Dockerfile",
+	"context": ".",
+	"workspaceFolder": "/nodejs-24",
+	"mounts": [
+		"source=node_modules,target=/nodejs-24-18/node_modules,type=volume",
+		"source=${localWorkspaceFolder},target=/nodejs-24,type=bind"
+	],
+	// "postCreateCommand": "npm install",
+	"customizations": {
+		"vscode": {
+			"extensions": []
+		}
+	}
+}
